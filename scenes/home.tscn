@@ -1,0 +1,110 @@
+[gd_scene load_steps=8 format=3 uid="uid://dl7wwdh8tfwm2"]
+
+[ext_resource type="Script" uid="uid://cm6ehlycqlo2n" path="res://scripts/home.gd" id="1_u4wd2"]
+[ext_resource type="Texture2D" uid="uid://bt6cj1jq8adrm" path="res://images/Quiz_US.png" id="1_vc333"]
+[ext_resource type="Texture2D" uid="uid://c1n8m3ww55pgj" path="res://images/Quiz_S.png" id="2_hhep5"]
+[ext_resource type="Texture2D" uid="uid://cwlh1ge6sbmkw" path="res://images/colours/Header1.png" id="4_yu5fn"]
+[ext_resource type="Texture2D" uid="uid://m56qa84flaa0" path="res://images/colours/Header2.png" id="5_ip4d6"]
+[ext_resource type="Texture2D" uid="uid://21us6yi3m28j" path="res://images/colours/Header3.png" id="6_gi00y"]
+[ext_resource type="Texture2D" uid="uid://kj7w7cg67jiy" path="res://images/Home.png" id="9_o7pnx"]
+
+[node name="home" type="Node2D"]
+
+[node name="camera" type="Camera2D" parent="."]
+zoom = Vector2(0.4, 0.4)
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="BP1H" type="TextureButton" parent="Buttons"]
+offset_left = -457.0
+offset_top = -734.0
+offset_right = 443.0
+offset_bottom = -554.0
+texture_normal = ExtResource("1_vc333")
+texture_hover = ExtResource("2_hhep5")
+
+[node name="Label" type="RichTextLabel" parent="Buttons/BP1H"]
+offset_right = 900.0
+offset_bottom = 180.0
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 75
+text = "BP1H"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text" type="Node" parent="."]
+
+[node name="Title" type="RichTextLabel" parent="Text"]
+offset_left = -512.0
+offset_top = -1247.0
+offset_right = -59.0
+offset_bottom = -953.0
+theme_override_font_sizes/normal_font_size = 231
+text = "RVZ"
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Credits" type="RichTextLabel" parent="Text"]
+anchors_preset = -1
+anchor_top = 0.0858333
+offset_left = -513.0
+offset_top = 886.0
+offset_right = -60.0
+offset_bottom = 1180.0
+theme_override_font_sizes/normal_font_size = 71
+text = "-Bradley"
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Title2" type="RichTextLabel" parent="Text"]
+offset_left = -73.0
+offset_top = -1066.0
+offset_right = 77.0
+offset_bottom = -989.0
+theme_override_font_sizes/normal_font_size = 61
+text = "V1.0"
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Status" type="RichTextLabel" parent="Text"]
+offset_left = -374.0
+offset_top = -922.0
+offset_right = 517.0
+offset_bottom = -845.0
+theme_override_font_sizes/normal_font_size = 41
+text = "Dashboard
+"
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("1_u4wd2")
+
+[node name="Header1" type="Sprite2D" parent="."]
+position = Vector2(1.5, -1079)
+scale = Vector2(5.415, 1.24)
+texture = ExtResource("4_yu5fn")
+
+[node name="Header2" type="Sprite2D" parent="."]
+position = Vector2(1, -888)
+scale = Vector2(5.42, 0.69)
+texture = ExtResource("5_ip4d6")
+
+[node name="Header3" type="Sprite2D" parent="."]
+position = Vector2(0.49999, 191)
+scale = Vector2(5.425, 10.1)
+texture = ExtResource("6_gi00y")
+
+[node name="Home" type="Sprite2D" parent="."]
+position = Vector2(-425, -887)
+scale = Vector2(0.44, 0.44)
+texture = ExtResource("9_o7pnx")
